@@ -7,53 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navigationBar">
-        <img src="logo.JPG" alt="logo" height="48px" align="left">
+    <nav class="navigationBar" >
+        <img id="logo" src="logo.JPG"  >
         <ul>
-          <li><a href="assignment1.html">Home</a></li>
-          <li><a href="contactus.html">contactus</a></li>
+            <li><a href="assignment1.html">Home</a></li>
+             <li><a href="contactus.html" class="con">contactUs</a></li>
         </ul>
-    </nav>
-    <p>Movies, also known as films, are a form of visual storytelling that combines moving images, sound, and often music to create narratives or convey artistic expression. They are a major component of the entertainment industry and can vary widely in genre, style, and format.
-
-      Movies are typically categorized into genres such as drama, comedy, action, horror, science fiction, romance, thriller, and fantasy. They can be feature-length, typically running from 90 to 180 minutes, or short films, which are shorter in duration. Movies can be animated or live-action and can be produced for theatrical release, television, or streaming platforms.
-    </p><br>
-    <h3>
+      </nav><br>
+    <p class="firstPara">
+        Cricket is a bat-and-ball game that is played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. Two players from the batting team (the striker and nonstriker) stand in front of either wicket holding bats, with one player from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the pitch. The striker's goal is to hit the bowled ball with the bat and then switch places with the nonstriker, with the batting team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of the field or when the ball is bowled illegally.
+    </p>
+    <h3 >
         <b>FORM</b>
     </h3>
     <form action = "javascript:submitForm()" onSubmit = "return validate()">
-        <label for="name">name:</label>
-        <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
-        <label for="email">email:</label>
-        <input type="email" id="emial" name="email" placeholder="enter ur email" required><br>
-        <p>Choose your Category</p>
-        <label for="Cricket">Batsman</label>
-        <input type="checkbox" value="romantic" id="Bat" name="Cricket"><br><br>
-        <label for="Cricket">Bowler</label>
-        <input type="checkbox" value="science fiction" id="Bowl" name="Cricket"><br><br>
-        <label for="Cricket">WK Batsman</label>
-        <input type="checkbox" value="comedy" id="WK" name="Cricket"><br><br>
-        <label for="Cricket">ALL Rounder</label>
-        <input type="checkbox" value="action" id="ALL" name="Cricket"><br><br>
-        <input type="submit" name="submit" value="submit">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="ENTER YOUR NAME"  style="width: 180px;height: 30px;"   required><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="emial" name="email" placeholder="ENTER YOUR EMAIL"  style="width: 180px;height: 30px;"   required><br><br>
+        <label for="genere">Genere:-
+            <select name="genere type" style="height: 40px; width:150;">
+                <option value="">--Select your Genere--</option>
+                <option value="">Batting</option>
+                <option value="">Bowling</option>
+                <option value="">All Rounder</option>
+            </select>
+        </label><br><br>
+        
+        
+        <label for="Subscribe" > SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL:-</label>
+        <input type="checkbox" style="height: 20px;width: 20px;"><br><br>
+        <div style="text-align: center; "  >
+        <input type="submit" name="submit" value="submit" style="height: 40px;width: 80px;" >
+        </div>
+
     </form>
     <script>
         function submitForm() {
         window.alert("Form Submitted")
       }
     </script>
+ 
     <footer>
-        <pre>
-
-
-
-
-
-
-
-        <small>all rights are reserved</small>
-        </pre>
+        
+            
+            <small>All rights are reserved</small>
+            
+       
     </footer>
+    
     </div>
 </body>
 </html>
